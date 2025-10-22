@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 class AppTheme{
-  static const Color primary = Colors.green;
+  static const Color primary = Colors.red;
   static const Color textosBlancos = Colors.white;
   static final ThemeData myTheme = ThemeData(
     scaffoldBackgroundColor: Colors.white,
@@ -11,6 +11,12 @@ class AppTheme{
     appBarTheme: AppBarTheme(
       backgroundColor: Colors.deepOrange,
       elevation: 2,
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(foregroundColor: primary)
+    ),
+    iconTheme: IconThemeData(
+      color: primary
     )
   );
   static final ThemeData myThemeDark = ThemeData(
