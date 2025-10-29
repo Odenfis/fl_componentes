@@ -21,9 +21,17 @@ class CardScreen extends StatelessWidget {
         children: [
           CustomCardType1(),
           SizedBox(height: 10),
-          CustomCardType2(),
+          CustomCardType3(
+            imageURL: 'assets/goku1.jpg',
+            titulo: 'La Vengaza de Goku',
+            ),
           SizedBox(height: 10),
-          CustomCardType1()          
+          //CustomCardType1(),
+          //SizedBox(height: 10),
+          CustomCardType3(
+            imageURL: 'assets/vegeta1.jpg',
+            //titulo: 'La Venganza de Vegeta',
+            )          
         ],
       )
     );

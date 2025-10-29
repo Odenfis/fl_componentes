@@ -15,6 +15,9 @@ class AppTheme{
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(foregroundColor: primary)
     ),
+    cardTheme: CardThemeData(
+      shadowColor: primary.withValues(alpha: 0.5)
+    ),
     iconTheme: IconThemeData(
       color: primary
     )

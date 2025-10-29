@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
-class CustomCardType2 extends StatelessWidget {
-  const CustomCardType2({
-    super.key,
+class CustomCardType3 extends StatelessWidget {
+
+  //variables
+  final String imageURL;
+  final String? titulo;
+
+  const CustomCardType3({
+    super.key, required this.imageURL, this.titulo,
   });
 
   @override
@@ -24,12 +29,13 @@ class CustomCardType2 extends StatelessWidget {
             height: 250,
             fit: BoxFit.cover,
             placeholder: AssetImage('assets/jar-loading.gif'), 
-            image: AssetImage('assets/goku1.jpg')
+            image: AssetImage(imageURL)
             ),
+          if (titulo != null)
           Container(
             alignment: AlignmentDirectional.centerEnd,
             padding: EdgeInsets.only(right: 20, bottom: 20, top: 20),
-            child: Text('Pelicula en Cartelera'),
+            child: Text(titulo ?? '<<sindato>>'),
           )
         ],
       ),
