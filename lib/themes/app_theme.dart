@@ -20,6 +20,16 @@ class AppTheme{
     ),
     iconTheme: IconThemeData(
       color: primary
+    ),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: primary
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: primary,
+        shape: StadiumBorder(),
+        elevation: 0
+      )
     )
   );
   static final ThemeData myThemeDark = ThemeData(
