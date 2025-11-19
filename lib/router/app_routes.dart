@@ -11,7 +11,9 @@ class AppRoutes{
     MenuOption(route: 'card', icon: Icons.card_giftcard, name: 'Pagina de Tarjetas', screen: CardScreen()),
     MenuOption(route: 'listview1', icon: Icons.list, name: 'Pagina Lista Tipo 1', screen: ListView1Screen()),
     MenuOption(route: 'listview2', icon: Icons.view_list, name: 'Pagina Lista Tipo 2', screen: ListView2Screen()),
-    MenuOption(route: 'avatar', icon: Icons.verified_user_sharp, name: 'Pagina de Usuario', screen: AvatarScreen())    
+    MenuOption(route: 'avatar', icon: Icons.verified_user_sharp, name: 'Pagina de Usuario', screen: AvatarScreen()),
+    MenuOption(route: 'animated', icon: Icons.animation_rounded, name: 'Pagina de Animaciones', screen: AnimatedScreen()),
+    MenuOption(route: 'login', icon: Icons.login, name: 'Pagina de Logeo', screen: LoginScreen())    
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes(){
