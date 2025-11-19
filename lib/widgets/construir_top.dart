@@ -16,6 +16,15 @@ class ConstruirTop extends StatelessWidget {
             Icons.location_city,
             size: 100,
             color: Colors.white,
+            ),
+          Text(
+            'VER LOCATION',
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              fontSize: 40,
+              letterSpacing: 2
+            ),
             )
         ],
       ),

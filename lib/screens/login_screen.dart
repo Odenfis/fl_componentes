@@ -1,5 +1,5 @@
 //import 'package:fl_componentes/themes/app_theme.dart';
-import 'package:fl_componentes/widgets/construir_top.dart';
+import 'package:fl_componentes/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -38,7 +38,11 @@ class _LoginScreenState extends State<LoginScreen> {
             Positioned(
               top: 70,
               child: ConstruirTop()
-              )
+              ),
+            Positioned(
+              bottom: 0,
+              child: ConstruirBottom()
+              )  
           ],
         ),
       ),
